@@ -1,0 +1,21 @@
+<%# CSS・・・assets/stylesheets/shared/header.css %>
+<header>
+  <div class="bar"></div>
+  <div class='top-page-header'>
+    <div class='left-header'>
+      <%= link_to image_tag("studio-logo.png", class: "studio-icon") %>
+    </div>
+    <div class='right-header'>
+      <ul class='lists-right'>
+        <% if admin_signed_in? %>
+          <li><%= link_to current_admin.last_mname, "名前", class: "admin-last-name" %></li>
+          <li><%= link_to 'ログアウト', destroy_admin_session_path, method: :delete, class: "logout" %></li>
+        <% else %>
+          <li><%= link_to '管理者ログイン', new_admin_session_path, class: "login" %></li>
+          <li><%= link_to 'アカウント新規登録', new_admin_registration_path, class: "sign-up" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="bar"></div>
+</header>
