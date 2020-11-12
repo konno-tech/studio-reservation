@@ -12,7 +12,7 @@ class Admin < ApplicationRecord
     validates :first_name_kana, format: { with: /\A[ァ-ン]+\z/, message: 'は全角（カタカナ）を使用してください' }
 
     validates :phone_number, format: { with: /\A\d{11}\z/, message: 'は「数字のみ且つ11桁以内で入力してください' }
-    
+
     validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: 'は英字と数字の両方を含めて設定してください' }
     validates :password_confirmation, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: 'は英字と数字の両方を含めて設定してください' }
   end
