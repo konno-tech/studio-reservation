@@ -4,6 +4,6 @@ class Studio < ApplicationRecord
   with_options presence: true do
     validates :name
     validates :price, numericality: { only_integer: true, message: 'Half-width number' },
-                                      inclusion: { in: 300..9_999_999 }
+                                      inclusion: { in: 500..9_999_999 }
   end
 end
