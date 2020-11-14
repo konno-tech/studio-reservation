@@ -8,6 +8,7 @@
     <div class='right-header'>
       <ul class='lists-right'>
         <% if admin_signed_in? %>
+          <li><%= link_to 'スタジオ追加', new_studio_path, class: "new-studio" %></li>
           <li><%= link_to current_admin.last_name, "#", class: "admin-last-name" %></li>
           <li><%= link_to 'ログアウト', destroy_admin_session_path, method: :delete, class: "logout" %></li>
         <% elsif user_signed_in? %>
