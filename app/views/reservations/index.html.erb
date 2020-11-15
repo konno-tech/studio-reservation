@@ -1,47 +1,47 @@
 <%= render "shared/header" %>
 <div class='main'>
 
-    <%# スタジオ一覧の表示 %>
-    <div class='studio-list'>
-      <div class='studio-list-header'>
-        スタジオ一覧
-      </div>
-      <ul class='studio-info'>
-        <li class='studio-list-table'>
-          <h3 class='studio-list-table-header'>
-            Studio name
-          </h3>
-          <ul>
-            <% @studios.each do |studio| %>
-              <li><%= studio.name %></li>
-            <% end %>
-          </ul>
-        </li>
-        <li class='studio-list-table'>
-          <h3 class='studio-list-table-header'>
-            Price / h
-          </h3>
-          <ul>
-            <% @studios.each do |studio| %>
-              <li>¥<%= studio.price.to_s(:delimited) %> / h</li>
-            <% end %>
-          </ul>
-        </li>
-        <li class='studio-list-table'>
-          <h3 class='studio-list-table-header'>
-            詳細ページ
-          </h3>
-          <ul>
-            <% @studios.each do |studio| %>
-              <%= link_to studio_path(studio.id) do %>
-                <li class='detail'>詳細</li>
-              <% end %>
-            <% end %>
-          </ul>
-        </li>
-      </ul>
-      ※表示価格は税抜き価格です。
+  <%# スタジオ一覧の表示 %>
+  <div class='studio-list'>
+    <div class='studio-list-header'>
+      スタジオ一覧
     </div>
-    <%# /スタジオ一覧 %>
+    <ul class='studio-info'>
+      <li class='studio-list-table'>
+        <h3 class='studio-list-table-header'>
+          Studio name
+        </h3>
+        <ul>
+          <% @studios.each do |studio| %>
+            <li><%= studio.name %></li>
+          <% end %>
+        </ul>
+      </li>
+      <li class='studio-list-table'>
+        <h3 class='studio-list-table-header'>
+          Price / h
+        </h3>
+        <ul>
+          <% @studios.each do |studio| %>
+            <li>¥<%= studio.price.to_s(:delimited) %> / h</li>
+          <% end %>
+        </ul>
+      </li>
+      <li class='studio-list-table'>
+        <h3 class='studio-list-table-header'>
+          詳細ページ
+        </h3>
+        <ul>
+          <% @studios.each do |studio| %>
+            <li>
+              <%= link_to '詳細', studio_path(studio.id), class: "detail" %>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+    </ul>
+    ※表示価格は税抜き価格です。
+  </div>
+  <%# /スタジオ一覧 %>
 
 </div>

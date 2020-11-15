@@ -56,5 +56,5 @@ li.studio-list-table > ul > li {
   text-decoration: none;
   color: #333333;
   margin-bottom: 2%;
-  border-bottom: 1px dotted #333333;
+  padding-right: 2%;
 }
