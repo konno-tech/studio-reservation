@@ -33,9 +33,11 @@
         </h3>
         <ul>
           <% @studios.each do |studio| %>
+            <% if admin_signed_in? %>
             <li>
-              <%= link_to '詳細', studio_path(studio.id), class: "detail" %>
+              <%= link_to '編集', edit_studio_path(studio.id), class: "detail" %>
             </li>
+            <% end %>
           <% end %>
         </ul>
       </li>
