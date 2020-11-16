@@ -40,7 +40,12 @@
               </li>
             <% end %>
           <% else %>
-            <p class='detail2'>ご要望などありましたらスタッフまでお声がけください。</p>
+            <% @studios.each do |studio| %>
+              <li>
+                <%= link_to 'スタジオ予約はこちら', new_studio_reserf_path(studio.id), class: "detail-user" %>
+              </li>
+            <% end %>
+            <p>その他ご要望などありましたらスタッフまでお声がけください。</p>
           <% end %>
         </ul>
       </li>
