@@ -1,5 +1,5 @@
 class StudiosController < ApplicationController
-  before_action :set_studio, only: [:edit, :update]
+  before_action :set_studio, only: [:edit, :update, :destroy]
 
   def new
     if admin_signed_in?
@@ -36,6 +36,15 @@ class StudiosController < ApplicationController
       else
         render :edit
       end
+    end
+  end
+
+  def destroy
+    if admin_signed_in?
+      @studio.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
     end
   end
 

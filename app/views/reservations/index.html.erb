@@ -36,6 +36,7 @@
             <% if admin_signed_in? %>
             <li>
               <%= link_to '編集', edit_studio_path(studio.id), class: "detail" %>
+              <%= link_to '削除', studio_path(studio.id), method: :delete, class: "detail", data: { confirm: '削除しますか？' } %>
             </li>
             <% end %>
           <% end %>
