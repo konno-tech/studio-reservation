@@ -29,16 +29,18 @@
       </li>
       <li class='studio-list-table'>
         <h3 class='studio-list-table-header'>
-          詳細ページ
+          その他
         </h3>
         <ul>
-          <% @studios.each do |studio| %>
-            <% if admin_signed_in? %>
-            <li>
-              <%= link_to '編集', edit_studio_path(studio.id), class: "detail" %>
-              <%= link_to '削除', studio_path(studio.id), method: :delete, class: "detail", data: { confirm: '削除しますか？' } %>
-            </li>
+          <% if admin_signed_in? %>
+            <% @studios.each do |studio| %>
+              <li>
+                <%= link_to '編集', edit_studio_path(studio.id), class: "detail" %>
+                <%= link_to '削除', studio_path(studio.id), method: :delete, class: "detail", data: { confirm: '削除しますか？' } %>
+              </li>
             <% end %>
+          <% else %>
+            <p class='detail2'>ご要望などありましたらスタッフまでお声がけください。</p>
           <% end %>
         </ul>
       </li>
