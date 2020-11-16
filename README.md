@@ -91,10 +91,10 @@ Things you may want to cover:
 
 | Column                         | Type       | Options           |
 | ------------------------------ | ---------- | ----------------- |
-| date                           | string     | null: false       |
-| time_from_id                   | text       | null: false       |
+| date                           | date       | null: false       |
+| time_from_id                   | integer    | null: false       |
 | time_to_id                     | integer    | null: false       |
-| note                           | integer    | null: false       |
+| note                           | text       | null: false       |
 | payment_method_id              | integer    | null: false       |
 | user                           | references | foreign_key: true |
 | reserve                        | references | foreign_key: true |
