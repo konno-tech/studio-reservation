@@ -94,6 +94,7 @@ Things you may want to cover:
 | date                           | date       | null: false       |
 | time_from_id                   | integer    | null: false       |
 | time_to_id                     | integer    | null: false       |
+| number_of_users_id             | integer    | null: false       |
 | note                           | text       | null: false       |
 | payment_method_id              | integer    | null: false       |
 | user                           | references | foreign_key: true |
