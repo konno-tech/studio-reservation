@@ -47,7 +47,7 @@ Things you may want to cover:
 | -------------------- | ---------- | ----------------- |
 | name                 | string     | null: false       |
 | price                | integer    | null: false       |
-| admin                | integer    | null: false       |
+| admin                | references | foreign_key: true |
 
 ### Association
 

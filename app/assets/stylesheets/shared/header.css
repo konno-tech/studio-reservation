@@ -50,6 +50,18 @@
   align-items: center; 
 }
 
+.new-studio {
+  text-decoration: none;
+  margin-right: 1.5vw;
+  color: #fff8dc;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1.5vh 1.5vw;
+  border: 1px solid black;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
 .admin-last-name {
   text-decoration: none;
   margin-right: 1.5vw;

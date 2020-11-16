@@ -1,0 +1,53 @@
+<%= render "shared/header" %>
+
+<div class='form-wrap'>
+
+  <%= form_with model: @studio, class: 'studio-main', local: true do |f| %>
+
+    <%# 入力欄のヘッダー %>
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+        スタジオ追加
+      </h1>
+    </div>
+    <%# /入力欄のヘッダー %>
+
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <%# 追加するスタジオ名の入力欄 %>
+    <div class="new-studios">
+      <div class="weight-bold-text">
+        スタジオ名
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :name, class:"studios-name", id:"studio-name", placeholder:"スタジオ名（必須 40文字まで)", maxlength:"40" %>
+    </div>
+    <%# /追加するスタジオ名の入力欄 %>
+
+    <%# 追加するスタジオ価格(/1h)の入力欄 %>
+    <div class="sell-price">
+      <div class="weight-bold-text question-text">
+        <span>価格<br>(¥500〜9,999,999)</span>
+      </div>
+      <div>
+        <div class="price-content">
+          <div class="price-text">
+            <span>価格(/1h) 税抜き</span>
+            <span class="indispensable">必須</span>
+          </div>
+          <span class="sell-yen">¥</span>
+          <%= f.text_field :price, class:"price-input", id:"studio-price", placeholder:"例）500" %>
+        </div>
+      </div>
+    </div>
+    <%# /追加するスタジオ価格(/1h)の入力欄 %>
+
+    <%# 下部ボタン %>
+    <div class="sell-btn-contents">
+      <%= f.submit "登録する" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+    <%# /下部ボタン %>
+
+  </div>
+<% end %>
