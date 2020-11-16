@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_16_032606) do
+ActiveRecord::Schema.define(version: 2020_11_16_070203) do
 
   create_table "admins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC", force: :cascade do |t|
     t.string "last_name", null: false
@@ -27,6 +27,20 @@ ActiveRecord::Schema.define(version: 2020_11_16_032606) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
+  create_table "reservations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC", force: :cascade do |t|
+    t.date "date", null: false
+    t.integer "time_from_id", null: false
+    t.integer "time_to_id", null: false
+    t.text "note", null: false
+    t.integer "payment_method_id", null: false
+    t.bigint "user_id"
+    t.bigint "reserve_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["reserve_id"], name: "index_reservations_on_reserve_id"
+    t.index ["user_id"], name: "index_reservations_on_user_id"
   end
 
   create_table "reserves", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC", force: :cascade do |t|
@@ -64,6 +78,8 @@ ActiveRecord::Schema.define(version: 2020_11_16_032606) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "reservations", "reserves", column: "reserve_id"
+  add_foreign_key "reservations", "users"
   add_foreign_key "reserves", "studios"
   add_foreign_key "reserves", "users"
   add_foreign_key "studios", "admins"

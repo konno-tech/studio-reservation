@@ -18,4 +18,5 @@ class User < ApplicationRecord
   end
 
   has_many :reserves
+  has_many :reservations
 end
