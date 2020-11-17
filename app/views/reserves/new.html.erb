@@ -1,0 +1,92 @@
+<%= render "shared/header" %>
+
+<div class='form-wrap'>
+
+  <%#= form_with model: @studio, url: studio_reserves_path, method: :post, class: 'studio-main', local: true do |f| %>
+  <%= form_with(url: studio_reserves_path, method: :post, model: @studio_reserve, class: 'studio-main', local: true) do |f| %>
+
+    <%# 入力欄のヘッダー %>
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+        スタジオ予約
+      </h1>
+    </div>
+    <%# /入力欄のヘッダー %>
+
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <%# 予約するスタジオの日程 %>
+    <div class="new-studios">
+      <div class="weight-bold-text">
+        予約日
+        <span class="indispensable">必須</span>
+      </div>
+      <%= raw sprintf(
+        f.date_select(
+          :date,
+          use_month_numbers: true,
+          date_separator: '%s'),
+        '年 ', '月 ') + '日' %>
+    </div>
+    <%# /予約するスタジオ名の日程 %>
+
+    <%# 予約するスタジオの時間 %>
+    <div class="new-studios">
+      <div class="weight-bold-text">
+        開始時間
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.collection_select(:time_from_id, TimeList.all, :id, :name, {}, {class: 'studios-name', id: 'studio-name'}) %>
+    </div>
+    <%# /追加するスタジオ名の入力欄 %>
+
+    <%# 予約するスタジオの時間 %>
+    <div class="new-studios">
+      <div class="weight-bold-text">
+        終了時間
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.collection_select(:time_to_id, TimeList.all, :id, :name, {}, {class: 'studios-name', id: 'studio-name'}) %>
+    </div>
+    <%# /予約するスタジオ名の時間 %>
+
+    <%# 予約人数 %>
+    <div class="new-studios">
+      <div class="weight-bold-text">
+        利用者数
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.collection_select(:number_of_users_id, NumberOfUsers.all, :id, :name, {}, {class: 'studios-name', id: 'studio-name'}) %>
+    </div>
+    <%# /予約人数 %>
+
+    <%# 予約する店舗への連絡事項欄 %>
+    <div class="new-studios">
+      <div class="weight-bold-text">
+        店舗への連絡事項
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :note, class: 'studios-name', id: 'studio-name', placeholder: "例）5分程度遅刻します。"%>
+    </div>
+    <%# /予約する店舗への連絡事項欄 %>
+
+    <%# 支払い方法 %>
+    <div class="new-studios">
+      <div class="weight-bold-text">
+        支払い方法
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.collection_select(:payment_method_id, PaymentMethod.all, :id, :name, {}, {class: 'studios-name', id: 'studio-name'}) %>
+    </div>
+    <%# /支払い方法 %>
+
+    <%# 下部ボタン %>
+    <div class="sell-btn-contents">
+      <%= f.submit "予約する" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+    <%# /下部ボタン %>
+
+  <% end %>
+</div>
+

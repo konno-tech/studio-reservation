@@ -2,12 +2,12 @@
 
 <div class='form-wrap'>
 
-  <%= form_with model: @studio, url: studios_path, method: :post, class: 'studio-main', local: true do |f| %>
+  <%= form_with model: @reserve, url: studio_reserves_path, method: :post, class: 'studio-main', local: true do |f| %>
 
     <%# 入力欄のヘッダー %>
     <div class='form-header'>
       <h1 class='form-header-text'>
-        スタジオ追加
+        スタジオ予約
       </h1>
     </div>
     <%# /入力欄のヘッダー %>
@@ -48,6 +48,5 @@
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
-
-  </div>
-<% end %>
+  <% end %>
+</div>

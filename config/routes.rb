@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   root to: 'reservations#index'
   resources :reservations, only: [:index]
   resources :studios,      only: [:new, :create, :edit, :update, :destroy] do
-    resources :reserves, only: [:new]
+    resources :reserves, only: [:new, :create]
   end
 end
