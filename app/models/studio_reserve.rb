@@ -16,7 +16,7 @@ class StudioReserve
 
   def save
     @reserve = Reserve.create(user_id: user_id, studio_id: studio_id)
-    Reservation.create(date: date, time_from_id: time_from_id, time_to_id: time_to_id, number_of_users_id: number_of_users_id,
+    Reservation.create(date: date, time_from_id: time_from_id, time_to_id: (time_to_id.to_i - 1).to_s, number_of_users_id: number_of_users_id,
                        note: note, payment_method_id: payment_method_id, user_id: @reserve.user_id, reserve_id: @reserve.id)
   end
 end

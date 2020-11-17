@@ -1,6 +1,5 @@
 class ReservesController < ApplicationController
   def new
-    # @studio_reserve = StudioReserve.new
     @studio = Studio.find(params[:studio_id])
     @studio_reserve = StudioReserve.new
   end
