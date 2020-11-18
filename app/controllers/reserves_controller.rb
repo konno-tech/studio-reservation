@@ -2,6 +2,7 @@ class ReservesController < ApplicationController
   def new
     @studio = Studio.find(params[:studio_id])
     @studio_reserve = StudioReserve.new
+    flash[:notice] = nil
   end
 
   def create
@@ -11,8 +12,14 @@ class ReservesController < ApplicationController
       if @studio_reserve.payment_method_id == "3"
         payment_method
       end
-      @studio_reserve.save
-      redirect_to root_path
+
+      if @studio_reserve.save
+        redirect_to root_path
+      else
+        flash[:notice] = "この時間は予約済みです。別の時間を予約してください。"
+        render :new
+      end
+
     else
       render :new
     end
