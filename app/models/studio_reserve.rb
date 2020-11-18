@@ -1,7 +1,7 @@
 class StudioReserve
   include ActiveModel::Model
   include ActiveRecord::AttributeAssignment
-  attr_accessor :date, :time_from_id, :time_to_id, :number_of_users_id, :note, :payment_method_id, :user_id, :studio_id #, :token
+  attr_accessor :date, :time_from_id, :time_to_id, :number_of_users_id, :note, :payment_method_id, :user_id, :studio_id, :token
 
   # 空の投稿を保存できないようにする
   with_options presence: true do
@@ -11,7 +11,12 @@ class StudioReserve
     validates :number_of_users_id, numericality: { other_than: 0, message: 'は「--」以外を選択してください' }
     validates :note
     validates :payment_method_id,  numericality: { other_than: 0, message: 'は「--」以外を選択してください' }
-    # validates :token
+    # 支払い方法が「クレジット決済（事前）」の場合のみバリデーションを設定する
+    validates :token, if: :pay_method?
+  end
+
+  def pay_method?
+    payment_method_id == "3"
   end
 
   def save
