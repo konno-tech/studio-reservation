@@ -9,7 +9,6 @@ class StudioReserve
     validates :time_from_id,       numericality: { other_than: 0, message: 'は「--」以外を選択してください' }
     validates :time_to_id,         numericality: { other_than: 0, message: 'は「--」以外を選択してください' }
     validates :number_of_users_id, numericality: { other_than: 0, message: 'は「--」以外を選択してください' }
-    validates :note
     validates :payment_method_id,  numericality: { other_than: 0, message: 'は「--」以外を選択してください' }
     # 支払い方法が「クレジット決済（事前）」の場合のみバリデーションを設定する
     validates :token, if: :pay_method?
