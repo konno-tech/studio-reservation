@@ -6,6 +6,6 @@ class Reserve < ApplicationRecord
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :time_list
-  belongs_to active_hash :payment_method
-
+  belongs_to_active_hash :payment_method
+  
 end

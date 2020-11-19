@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_11_16_070203) do
     t.date "date", null: false
     t.integer "time_from_id", null: false
     t.integer "time_to_id", null: false
+    t.integer "number_of_users_id", null: false
     t.text "note", null: false
     t.integer "payment_method_id", null: false
     t.bigint "user_id"

@@ -58,3 +58,8 @@ li.studio-list-table > ul > li {
   margin-bottom: 2%;
   padding-right: 2%;
 }
+
+.detail-user {
+  text-decoration: none;
+  color:#cd853f;
+}
