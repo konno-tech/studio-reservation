@@ -1,5 +1,26 @@
 <%= render "shared/header" %>
 <div class='main'>
+<div class='wrap'>
+
+  <%# スタジオ画像の表示 %>
+
+  <%# /スタジオ画像の表示 %>
+
+  <%# 予約一覧の表示 %>
+  <div class='reserve-list'>
+    <%= month_calendar events: @reservations do |date, reservation| %>
+      <%= date.day %>
+      <% reservation.each do |i| %>
+        <div>
+          <%= f = Studio.find_by(id: i.reserve.studio_id).name %>
+          <%= g = TimeList.find_by(id: i.time_from_id).name %> ~
+          <%= h = TimeList.find_by(id: i.time_to_id).name %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%# /予約一覧の表示 %>
 
   <%# スタジオ一覧の表示 %>
   <div class='studio-list'>
@@ -53,5 +74,5 @@
     ※表示価格は税抜き価格です。
   </div>
   <%# /スタジオ一覧 %>
-
+</div>
 </div>
