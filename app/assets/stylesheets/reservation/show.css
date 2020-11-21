@@ -1,0 +1,58 @@
+/* 予約の概要 */
+
+.reserve-show {
+  background-color: #fdf5e6;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+}
+
+.reserve-box {
+  background-color: #FFF;
+  width: 70vw;
+  min-width: 1200px;
+  padding: 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reserve-box>.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.reserve-box-img {
+  height: 60vh;
+  width: 80vw;
+  min-height: 500px;
+  object-fit: contain;
+}
+
+.reserve-explain-box {
+  font-size: 18px;
+  margin: 40px 0px;
+}
+
+.detail-table {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.detail-reservation {
+  width: 25%;
+  background-color: #fdf5e6;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-value {
+  width: 75%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+}
