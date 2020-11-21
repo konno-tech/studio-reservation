@@ -1,0 +1,86 @@
+<%= render "shared/header" %>
+
+<%# 商品の概要 %>
+<div class="reserve-show">
+  <div class="reserve-box">
+    <h2 class="name">
+      <% if @reservation.reserve.studio_id == 1 %>
+        <%= @reservation.reserve.studio.name %>
+        <%#= image_tag 'studio-a.jpg' , class:"test" %>
+      <% elsif @reservation.reserve.studio_id == 2 %>
+        <%= @reservation.reserve.studio.name %>
+        <%#= image_tag 'studio-b.jpg' , class:"test" %>
+      <% else @reservation.reserve.studio_id == 3 %>
+        <%= @reservation.reserve.studio.name %>
+        <%#= image_tag 'studio-c.jpg' , class:"test" %>
+      <% end %>
+      <%#= @item.name %>
+    </h2>
+    <div class='studio-img-content'>
+      <% if @reservation.reserve.studio_id == 1 %>
+        <%= image_tag 'studio-a.jpg' , class:"reserve-box-img" %>
+      <% elsif @reservation.reserve.studio_id == 2 %>
+        <%= image_tag 'studio-b.jpg' , class:"reserve-box-img" %>
+      <% else @reservation.reserve.studio_id == 3 %>
+        <%= image_tag 'studio-c.jpg' , class:"reserve-box-img" %>
+      <% end %>
+      <%#= image_tag 'card-visa.gif', class: 'card-logo'%>
+      <%# 商品が売れている場合は、sold outを表示しましょう %>
+      <%# end %>
+      <%# //商品が売れている場合は、sold outを表示しましょう %>
+    </div>
+
+    <%# 対象商品が売却済みではない 且つ ログインしている場合は以下を表示する %>
+    <%# if @item.order.blank? && user_signed_in?%>
+        <%# ログインユーザ ＝ 投稿者の場合は以下「商品の編集・削除」機能が使用可能 %>
+        <%# if current_user.id == @item.user.id%>
+          <%#= link_to '商品の編集', edit_item_path(@item.id), method: :get, class: "item-red-btn" %>
+          <%# <p class='or-text'>or</p> %>
+          <%#= link_to '削除', item_path, method: :delete, class:'item-destroy' %>
+        <%# ログインユーザ ≠ 投稿者の場合は購入機能のみが使用可能 %>
+        <%# else %>
+          <%#= link_to '購入画面に進む', item_orders_path(@item.id) ,class:"item-red-btn"%>
+        <%# end %>
+    <%# end %>
+
+    <div class="reserve-explain-box">
+      <span>予約情報</span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-reservation">予約者</th>
+          <td class="detail-value"><%= @reservation.user.last_name %></td>
+        </tr>
+        <tr>
+          <th class="detail-reservation">予約日</th>
+          <td class="detail-value"><%= @reservation.date %></td>
+        </tr>
+        <tr>
+          <th class="detail-reservation">開始時間</th>
+          <td class="detail-value"><%= TimeList.find_by(id: @reservation.time_from_id).name %></td>
+        </tr>
+        <tr>
+          <th class="detail-reservation">終了時間</th>
+          <td class="detail-value"><%= TimeList.find_by(id: @reservation.time_to_id).name %></td>
+        </tr>
+        <tr>
+          <th class="detail-reservation">利用人数</th>
+          <td class="detail-value"><%= NumberOfUsers.find_by(id: @reservation.number_of_users_id).name %></td>
+        </tr>
+        <tr>
+          <th class="detail-reservation">店舗への連絡事項</th>
+          <td class="detail-value"><%= @reservation.note %></td>
+        </tr>
+        <tr>
+          <th class="detail-reservation">支払い方法</th>
+          <td class="detail-value"><%= PaymentMethod.find_by(id: @reservation.payment_method_id).name %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <%# /商品の概要 %>
+
+</div>
+
+<%#= render "shared/footer" %>

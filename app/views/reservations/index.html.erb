@@ -1,5 +1,39 @@
 <%= render "shared/header" %>
 <div class='main'>
+<div class='wrap'>
+
+  <%# ヘッダー %>
+  <p class='header-content1'>横浜エリア お客様満足度No1!!</p>
+  <p class='header-content2'>広々としたスタジオに各種最高の機材を用意!!　　お悩み事があればぜひご相談ください!!
+  </p>
+  <%# /ヘッダー %>
+
+  <%# スタジオ画像の表示 %>
+  <div class='studio-img-content'>
+    <%= image_tag 'studio-a.jpg' , class:"studio-box-img" %>
+    <%= image_tag 'studio-b.jpg' , class:"studio-box-img" %>
+    <%= image_tag 'studio-c.jpg' , class:"studio-box-img" %>
+  </div>
+  <%# /スタジオ画像の表示 %>
+
+  <%# 予約一覧の表示 %>
+  <p class='calendar-content'>今月の予約状況</p>
+  <div class='reserve-list'>
+    <%= month_calendar events: @reservations do |date, reservation| %>
+      <%= date.day %>
+      <% reservation.each do |i| %>
+        <div>
+          <%= link_to Studio.find_by(id: i.reserve.studio_id).name, reservation_path(i.id), class: "test" %>
+          <%#= f = Studio.find_by(id: i.reserve.studio_id).name %>
+          <%= g = TimeList.find_by(id: i.time_from_id).name %> ~
+          <%= h = TimeList.find_by(id: i.time_to_id).name %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <%# /予約一覧の表示 %>
+
+  <hr color="#d3d3d3">
 
   <%# スタジオ一覧の表示 %>
   <div class='studio-list'>
@@ -53,5 +87,5 @@
     ※表示価格は税抜き価格です。
   </div>
   <%# /スタジオ一覧 %>
-
+</div>
 </div>
