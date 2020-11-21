@@ -3,6 +3,7 @@ class ReservesController < ApplicationController
     @studio = Studio.find(params[:studio_id])
     @studio_reserve = StudioReserve.new
     flash[:notice] = nil
+    @reservations = Reservation.all.order(time_from_id: 'ASC')
   end
 
   def create
