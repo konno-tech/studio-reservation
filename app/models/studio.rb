@@ -3,7 +3,7 @@ class Studio < ApplicationRecord
 
   with_options presence: true do
     validates :name
-    validates :price, numericality: { only_integer: true, message: 'Half-width number' },
+    validates :price, numericality: { only_integer: true, message: 'は半角数字で入力してください' },
                                       inclusion: { in: 500..9_999_999 }
   end
 

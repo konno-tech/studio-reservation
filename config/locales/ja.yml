@@ -1,0 +1,28 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       last_name: 苗字
+       first_name: 名前
+       last_name_kana: 苗字（カナ）
+       first_name_kana: 名前（カナ）
+       phone_number: 電話番号
+     admin:
+       last_name: 苗字
+       first_name: 名前
+       last_name_kana: 苗字（カナ）
+       first_name_kana: 名前（カナ）
+       phone_number: 電話番号
+     studio:
+       name: スタジオ名
+       price: 価格
+     reservation:
+       date: 予約日
+ activemodel:
+   attributes:
+     studio_reserve:
+       time_from_id: 開始時間
+       time_to_id: 終了時間
+       number_of_users_id: 利用者数
+       payment_method_id: 支払い方法
+       token: 正しくクレジットカードの情報
