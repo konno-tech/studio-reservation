@@ -1,0 +1,16 @@
+.sell-btn-contents {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.sell-btn {
+  width: 100%;
+  background: #fff8dc;
+  border: 1px solid #cd853f;
+  color: #333333;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
