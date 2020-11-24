@@ -6,15 +6,11 @@
     <h2 class="name">
       <% if @reservation.reserve.studio_id == 1 %>
         <%= @reservation.reserve.studio.name %>
-        <%#= image_tag 'studio-a.jpg' , class:"test" %>
       <% elsif @reservation.reserve.studio_id == 2 %>
         <%= @reservation.reserve.studio.name %>
-        <%#= image_tag 'studio-b.jpg' , class:"test" %>
       <% else @reservation.reserve.studio_id == 3 %>
         <%= @reservation.reserve.studio.name %>
-        <%#= image_tag 'studio-c.jpg' , class:"test" %>
       <% end %>
-      <%#= @item.name %>
     </h2>
     <div class='studio-img-content'>
       <% if @reservation.reserve.studio_id == 1 %>
@@ -24,25 +20,7 @@
       <% else @reservation.reserve.studio_id == 3 %>
         <%= image_tag 'studio-c.jpg' , class:"reserve-box-img" %>
       <% end %>
-      <%#= image_tag 'card-visa.gif', class: 'card-logo'%>
-      <%# 商品が売れている場合は、sold outを表示しましょう %>
-      <%# end %>
-      <%# //商品が売れている場合は、sold outを表示しましょう %>
     </div>
-
-    <%# 対象商品が売却済みではない 且つ ログインしている場合は以下を表示する %>
-    <%# if @item.order.blank? && user_signed_in?%>
-        <%# ログインユーザ ＝ 投稿者の場合は以下「商品の編集・削除」機能が使用可能 %>
-        <%# if current_user.id == @item.user.id%>
-          <%#= link_to '商品の編集', edit_item_path(@item.id), method: :get, class: "item-red-btn" %>
-          <%# <p class='or-text'>or</p> %>
-          <%#= link_to '削除', item_path, method: :delete, class:'item-destroy' %>
-        <%# ログインユーザ ≠ 投稿者の場合は購入機能のみが使用可能 %>
-        <%# else %>
-          <%#= link_to '購入画面に進む', item_orders_path(@item.id) ,class:"item-red-btn"%>
-        <%# end %>
-    <%# end %>
-
     <div class="reserve-explain-box">
       <span>予約情報</span>
     </div>
@@ -76,6 +54,14 @@
           <th class="detail-reservation">支払い方法</th>
           <td class="detail-value"><%= PaymentMethod.find_by(id: @reservation.payment_method_id).name %></td>
         </tr>
+        <%# adminでログインしている場合のみ予約者の電話番号を表示する %>
+        <% if admin_signed_in? %>
+        <tr>
+          <th class="detail-reservation">電話番号</th>
+          <td class="detail-value"><%= @reservation.user.phone_number %></td>
+        </tr>
+        <% end %>
+        <%# /adminでログインしている場合のみ電話番号を表示する %>
       </tbody>
     </table>
   </div>
