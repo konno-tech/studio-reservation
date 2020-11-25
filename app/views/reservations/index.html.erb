@@ -24,7 +24,6 @@
       <% reservation.each do |i| %>
         <div>
           <%= link_to Studio.find_by(id: i.reserve.studio_id).name, reservation_path(i.id), class: "test" %>
-          <%#= f = Studio.find_by(id: i.reserve.studio_id).name %>
           <%= g = TimeList.find_by(id: i.time_from_id).name %> ~
           <%= h = TimeList.find_by(id: i.time_to_id).name %>
         </div>
