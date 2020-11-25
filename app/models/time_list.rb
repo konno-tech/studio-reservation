@@ -13,6 +13,7 @@ class TimeList < ActiveHash::Base
     { id: 10, name: '19:00' }, # 19~20時
     { id: 11, name: '20:00' }, # 20~21時
     { id: 12, name: '21:00' }, # 21~22時
-    { id: 13, name: '22:00' }
+    { id: 13, name: '22:00' },
+    { id: 14, name: '22:00' }
   ]
 end
