@@ -1,8 +1,8 @@
 /* 予約の概要 */
 
 .reserve-show {
-  background-color: #fdf5e6;
-  width: 100vw;
+  background-color: rgba(245,245,245,0.7);
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,9 @@
 .reserve-box>.name {
   text-align: center;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 5vw;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
 }
 
 .reserve-box-img {
@@ -33,8 +35,10 @@
 }
 
 .reserve-explain-box {
-  font-size: 18px;
+  font-size: 5vw;
   margin: 40px 0px;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
 }
 
 .detail-table {
@@ -44,15 +48,17 @@
 
 .detail-reservation {
   width: 25%;
-  background-color: #fdf5e6;
+  background-color:rgba(245,245,245,0.7);
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
+  font-family: 'TsukuARdGothic-Regular';
 }
 
 .detail-value {
   width: 75%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 20px;
+  font-family: 'TsukuARdGothic-Regular';
 }
