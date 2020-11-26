@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :studios,      only: [:new, :create, :edit, :update, :destroy] do
     resources :reserves, only: [:new, :create]
   end
+  resources :users, only: :show
 end

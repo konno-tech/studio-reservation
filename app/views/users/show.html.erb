@@ -1,0 +1,36 @@
+<%= render "shared/header" %>
+<div class="reserve-show">
+  <div class="reserve-box">
+    <div class="reserve-explain-box">
+      <h2 class="name">
+        過去の予約情報
+      </h2>
+    </div>
+    <hr color="#d3d3d3">
+    <% num = 1 %>
+
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-reservation2">No</th>
+          <td class="detail-reservation-list-head">予約日</td>
+          <td class="detail-reservation-list-head">スタジオ名</td>
+          <td class="detail-reservation-list-head">開始時間</td>
+          <td class="detail-reservation-list-head">終了時間</td>
+        </tr>
+        <% @reservations.each do |reservation| %>
+          <tr>
+            <th class="detail-reservation2"><%= link_to num, reservation_path(reservation.id), class: "test" %></th>
+            <td class="detail-reservation-list"><%= reservation.date %></td>
+            <td class="detail-reservation-list"><%= Studio.find_by(id: reservation.reserve.studio_id).name %></td>
+            <td class="detail-reservation-list"><%= TimeList.find_by(id: reservation.time_from_id).name %></td>
+            <td class="detail-reservation-list"><%= TimeList.find_by(id: reservation.time_to_id).name %></td>
+            <% num += 1%>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    
+  </div>
+</div>
+<%= render "shared/footer"%>

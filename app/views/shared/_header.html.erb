@@ -12,7 +12,7 @@
           <li><%= link_to current_admin.last_name, "#", class: "admin-last-name" %></li>
           <li><%= link_to 'ログアウト', destroy_admin_session_path, method: :delete, class: "logout" %></li>
         <% elsif user_signed_in? %>
-          <li><%= link_to current_user.last_name, "#", class: "user-last-name" %></li>
+          <li><%= link_to current_user.last_name, user_path(current_user.id), class: "user-last-name" %></li>
           <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
         <% else %>
           <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
