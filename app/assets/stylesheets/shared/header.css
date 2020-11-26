@@ -6,7 +6,7 @@
   width: 100%;
   height: 10vh;
   position: relative;
-  background-color: #cd853f;
+  background-color: rgba(245,245,245,0.7);
 }
 
 .back-image {
@@ -23,12 +23,9 @@
 }
 
 .studio-icon {
-  width: 23vw;
-  height: 8vh;
-  margin-right: 1vw;
-  margin-top: 1vh;
-  border-radius: 80px;
-  object-fit: contain;
+  font-size: 2vw;
+  color: #c0c0c0;
+  font-family: 'Zapfino';
 }
 
 .right-header {
@@ -45,7 +42,7 @@
   display: flex;
   list-style: none;
   padding-top: 1vh;
-  font-family: 'Osaka';
+  font-family: 'TsukuARdGothic-Regular';
   color: #333333;
   align-items: center; 
 }
@@ -53,7 +50,7 @@
 .new-studio {
   text-decoration: none;
   margin-right: 1.5vw;
-  color: #fff8dc;
+  color: #333333;
   font-size: 20px;
   font-weight: bold;
   padding: 1.5vh 1.5vw;
@@ -65,7 +62,7 @@
 .admin-last-name {
   text-decoration: none;
   margin-right: 1.5vw;
-  color: #fff8dc;
+  color: #333333;
   font-size: 20px;
   font-weight: bold;
   padding: 1.5vh 1.5vw;
@@ -77,7 +74,7 @@
 .user-last-name {
   text-decoration: none;
   margin-right: 1.5vw;
-  color: #fff8dc;
+  color: #333333;
   font-size: 20px;
   font-weight: bold;
   padding: 1.5vh 1.5vw;
@@ -88,7 +85,7 @@
 
 .logout {
   text-decoration: none;
-  color: #fff8dc;
+  color: #333333;
   font-size: 20px;
   font-weight: bold;
   padding: 1.5vh 1.5vw;
@@ -100,7 +97,7 @@
 .login {
   text-decoration: none;
   margin-right: 1vw;
-  color: #fff8dc;
+  color: #333333;
   font-size: 1.3vw;
   font-weight: bold;
   padding: 1.5vh 1.5vw;
@@ -111,7 +108,7 @@
 
 .sign-up {
   text-decoration: none;
-  color: #fff8dc;
+  color: #333333;
   font-size: 1.3vw;
   font-weight: bold;
   padding: 1.5vh 1.5vw;
@@ -121,5 +118,5 @@
 }
 
 .bar {
-  border: 3px solid #333333;
+  border: 1px solid #d3d3d3;
 }

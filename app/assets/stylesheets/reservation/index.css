@@ -1,32 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1%;
 }
 
 .wrap {
   width: 100%;
 }
 
-.header-content1 {
-  color: #3f3f3f;
-  font-size: 30px;
-  font-family: 'Osaka';
+.header-area {
+  width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  align-items: center;
 }
 
-.header-content2 {
-  color: #3f3f3f;
-  font-size: 20px;
-  font-family: 'Osaka';
+.header-area div.text-1 {
+  position: absolute;
+  font-size: 250%;
+  font-weight: bold;
+  top: 10%;
+  left: 15%;
+  color: #c0c0c0;
+  font-family: 'Zapfino';
+}
+
+.header-area div.text-2 {
+  position: absolute;
+  vertical-align: middle;
+  font-size: 170%;
+  font-weight: bold;
+  top: 75%;
+  left: 15%;
+  color: #c0c0c0;
+  font-family: 'TsukuARdGothic-Regular';
+  background-color: rgba(245,245,245,0.2);
+}
+
+.header-area div.text-3 {
+  position: absolute;
+  vertical-align: middle;
+  font-size: 170%;
+  font-weight: bold;
+  top: 82%;
+  left: 15%;
+  color: #c0c0c0;
+  font-family: 'TsukuARdGothic-Regular';
+  background-color: rgba(245,245,245,0.2);
+}
+
+.header-area div.text-4 {
+  position: absolute;
+  vertical-align: middle;
+  font-size: 170%;
+  font-weight: bold;
+  top: 89%;
+  left: 15%;
+  color: #c0c0c0;
+  font-family: 'TsukuARdGothic-Regular';
+  background-color: rgba(245,245,245,0.2);
+}
+
+/* 各種メニュー */
+.right-header2 {
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
+  margin-top: 6%;
+  padding-bottom: 0.5%;
+}
+
+.lists-right2 {
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  padding-top: 1vh;
+  font-family: 'TsukuARdGothic-Regular';
+  color: #333333;
+}
+
+.new-studio2 {
+  text-decoration: none;
+  margin-right: 1.5vw;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1.5vh 1.5vw;
+  border: 1px solid black;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.admin-last-name2 {
+  text-decoration: none;
+  margin-right: 1.5vw;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1.5vh 1.5vw;
+  border: 1px solid black;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.user-last-name2 {
+  text-decoration: none;
+  margin-right: 1.5vw;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1.5vh 1.5vw;
+  border: 1px solid black;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.logout2 {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1.5vh 1.5vw;
+  border: 1px solid black;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.login2 {
+  text-decoration: none;
+  margin-right: 1vw;
+  color: #333333;
+  font-size: 1.3vw;
+  font-weight: bold;
+  padding: 1.5vh 1.5vw;
+  border: 1px solid black;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.sign-up2 {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.3vw;
+  font-weight: bold;
+  padding: 1.5vh 1.5vw;
+  border: 1px solid black;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+/* /各種メニュー */
+
+.space {
+  width: 100%;
+  height: 20%;
+}
+
+.studio-img {
+  width: 100%;
 }
 
 .studio-img-content {
@@ -34,10 +170,9 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   padding: 2% 0%;
-  border-top: 2px solid #d3d3d3;
-  border-bottom: 2px solid #d3d3d3;
+  position: relative;
 }
 
 .studio-box-img {
@@ -45,13 +180,42 @@
   align-self: flex-start;
 }
 
+.studio-img-content div.text-5 {
+  position: absolute;
+  font-size: 200%;
+  font-weight: bold;
+  top: 75%;
+  left: 2%;
+  color: #c0c0c0;
+  font-family: 'TsukuARdGothic-Regular';
+}
+
+.studio-img-content div.text-6 {
+  position: absolute;
+  font-size: 200%;
+  font-weight: bold;
+  top: 75%;
+  left: 35%;
+  color: #c0c0c0;
+  font-family: 'TsukuARdGothic-Regular';
+}
+
+.studio-img-content div.text-7 {
+  position: absolute;
+  font-size: 200%;
+  font-weight: bold;
+  top: 75%;
+  left: 67%;
+  color: #c0c0c0;
+  font-family: 'TsukuARdGothic-Regular';
+}
+
 .calendar-content {
   color: #3f3f3f;
-  font-size: 20px;
-  font-family: 'Osaka';
+  font-size: 5vw;
+  font-family: 'TsukuARdGothic-Regular';
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
 }
 
 .reserve-list {
@@ -62,16 +226,16 @@
   margin-bottom: 2%;
 }
 
-
 .studio-list {
   padding-top: 2%;
   width: 80%;
   padding-left: 20%;
+  margin-top: 10%;
 }
 
 .studio-list-header {
-  font-family: 'Osaka';
-  font-size: 25px;
+  font-family: 'TsukuARdGothic-Regular';
+  font-size: 5vw;
   color: #333333;
   margin-bottom: 10px;
   text-align: center;
@@ -87,7 +251,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: 'Osaka';
+  font-family: 'TsukuARdGothic-Regular';
 }
 
 ul.studio-info > li {
@@ -106,6 +270,7 @@ ul.studio-info > li {
   font-weight: bold;
   margin-bottom: 10px;
   border-bottom: 2px solid #333333;
+  font-family: 'TsukuARdGothic-Regular';
 }
 
 li.studio-list-table > ul > li {
@@ -118,9 +283,18 @@ li.studio-list-table > ul > li {
   color: #333333;
   margin-bottom: 2%;
   padding-right: 2%;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
 }
 
 .detail-user {
   text-decoration: none;
   color:#cd853f;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
+}
+
+.index-text {
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
 }
