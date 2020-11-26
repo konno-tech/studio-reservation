@@ -1,20 +1,41 @@
-<%= render "shared/header" %>
+<%#= render "shared/header" %>
 <div class='main'>
 <div class='wrap'>
 
   <%# ヘッダー %>
-  <p class='header-content1'>横浜エリア お客様満足度No1!!</p>
-  <p class='header-content2'>広々としたスタジオに各種最高の機材を用意!!　　お悩み事があればぜひご相談ください!!
-  </p>
+  <div class="header-area">
+    <%= image_tag 'top-studio.jpg' , class:"studio-img" %>
+    <div class="text-1">Kon-Studio</div>
+    <div class="text-2">横浜エリア お客様満足度No1!!</div>
+    <div class="text-3">広々としたスタジオに各種最高の機材を用意!!</div>
+    <div class="text-4">お悩み事があればぜひご相談ください!!</div>
+  </div>
+  <hr color="#d3d3d3">
+
+  <div class='right-header2'>
+    <ul class='lists-right2'>
+      <% if admin_signed_in? %>
+        <li><%= link_to 'スタジオ追加', new_studio_path, class: "new-studio2" %></li>
+        <li><%= link_to current_admin.last_name, "#", class: "admin-last-name2" %></li>
+        <li><%= link_to 'ログアウト', destroy_admin_session_path, method: :delete, class: "logout2" %></li>
+      <% elsif user_signed_in? %>
+        <li><%= link_to current_user.last_name, user_path(current_user.id), class: "user-last-name2" %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout2" %></li>
+      <% else %>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login2" %></li>
+        <li><%= link_to 'アカウント新規登録', new_user_registration_path, class: "sign-up2" %></li>
+      <% end %>
+    </ul>
+  </div>
   <%# /ヘッダー %>
 
-  <%# スタジオ画像の表示 %>
-  <div class='studio-img-content'>
-    <%= image_tag 'studio-a.jpg' , class:"studio-box-img" %>
-    <%= image_tag 'studio-b.jpg' , class:"studio-box-img" %>
-    <%= image_tag 'studio-c.jpg' , class:"studio-box-img" %>
-  </div>
-  <%# /スタジオ画像の表示 %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
   <%# 予約一覧の表示 %>
   <p class='calendar-content'>今月の予約状況</p>
@@ -46,17 +67,17 @@
         </h3>
         <ul>
           <% @studios.each do |studio| %>
-            <li><%= studio.name %></li>
+            <li class="index-text"><%= studio.name %></li>
           <% end %>
         </ul>
       </li>
       <li class='studio-list-table'>
         <h3 class='studio-list-table-header'>
-          Price / h
+          <div class='index-text'>Price / h</div>
         </h3>
         <ul>
           <% @studios.each do |studio| %>
-            <li>¥<%= studio.price.to_s(:delimited) %> / h</li>
+            <li class='index-text'>¥<%= studio.price.to_s(:delimited) %> / h</li>
           <% end %>
         </ul>
       </li>
@@ -78,14 +99,22 @@
                 <%= link_to 'スタジオ予約はこちら', new_studio_reserf_path(studio.id), class: "detail-user" %>
               </li>
             <% end %>
-            <p>その他ご要望などありましたらスタッフまでお声がけください。</p>
+            <div class='index-text'>その他ご要望などありましたらスタッフまでお声がけください。</div>
           <% end %>
         </ul>
       </li>
     </ul>
-    ※表示価格は税抜き価格です。
+    <div class='index-text'>※表示価格は税抜き価格です。</div>
   </div>
   <%# /スタジオ一覧 %>
+  <div class='studio-img-content'>
+    <%= image_tag 'studio-a.jpg' , class:"studio-box-img" %>
+    <div class="text-5">Studio-A</div>
+    <%= image_tag 'studio-b.jpg' , class:"studio-box-img" %>
+    <div class="text-6">Studio-B</div>
+    <%= image_tag 'studio-c.jpg' , class:"studio-box-img" %>
+    <div class="text-7">Studio-C</div>
+  </div>  
 </div>
 </div>
 <%= render "shared/footer"%>

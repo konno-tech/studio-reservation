@@ -1,22 +1,25 @@
 .detail-reservation2 {
   width: 10%;
-  background-color: #fdf5e6;
+  background-color:rgba(245,245,245,0.7);
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 20px;
+  font-family: 'TsukuARdGothic-Regular';
   text-align: center;
 }
 
 .detail-reservation-list-head {
-  background-color: #fdf5e6;
+  background-color:rgba(245,245,245,0.7);
   width: 22.5%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 20px;
+  font-family: 'TsukuARdGothic-Regular';
 }
 
 .detail-reservation-list {
   width: 22.5%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: 'TsukuARdGothic-Regular';
 }
