@@ -1,5 +1,17 @@
-.footer {
+.page-footer {
   width: 100%;
-  background-color: #fdf5e6;
-  min-height: 15vh;
+  height: 10vh;
+  position: relative;
+  background-color: #cd853f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text-wrap {
+  height: 10vh;
+}
+
+.footer-text {
+  height: 10vh;
 }
