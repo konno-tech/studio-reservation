@@ -20,6 +20,9 @@ https://studio-reservation-tk.herokuapp.com/
    * password:1qaz1qaz 
 
 ## 利用方法
+* ***共通事項***
+   1. admin、userいずれの機能を利用する際も、当アプリはBasic認証を導入しているため、ログイン後にポップアップが表示された場合は以下の内容を入力することで利用することができる。
+   - 
 * ***管理者（admin）の場合***
    1. [管理者ログインページ](https://studio-reservation-tk.herokuapp.com/admins/sign_in)へ遷移する。
    2. テスト用アカウント：``管理者（admin）アカウント``にてログインする。
