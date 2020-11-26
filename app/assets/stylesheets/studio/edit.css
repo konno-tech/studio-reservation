@@ -1,0 +1,33 @@
+.studios-name {
+  font-size: 20px;
+  font-family: 'TsukuARdGothic-Regular';
+}
+
+.sell-yen {
+  font-size: 20px;
+  font-family: 'TsukuARdGothic-Regular';
+}
+
+.price-input {
+  font-size: 20px;
+  font-family: 'TsukuARdGothic-Regular';
+}
+
+.sell-btn-contents {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.regist-btn {
+  width: 100%;
+  background: #fffaf0;
+  border: 1px solid #ffa500;
+  color: #333333;
+  line-height: 48px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'TsukuARdGothic-Regular';
+  cursor: pointer;
+  margin-bottom: 30px;
+}
