@@ -2,8 +2,9 @@
 
 ## アプリケーション名
 Studio-Reservation
-![top-page-1](https://user-images.githubusercontent.com/72255154/100216169-4fa6f700-2f55-11eb-968f-b9557452b75e.jpg)
-![top-page-2](https://user-images.githubusercontent.com/72255154/100216411-985eb000-2f55-11eb-9327-337c58c51ac5.jpg)
+![top-1](https://user-images.githubusercontent.com/72255154/100401212-293fa380-309c-11eb-9e98-505a3a0577e3.jpg)
+![top-2](https://user-images.githubusercontent.com/72255154/100401253-58561500-309c-11eb-9464-0e241dcd5102.jpg)
+![top-3](https://user-images.githubusercontent.com/72255154/100401268-66a43100-309c-11eb-8eec-4e65fc12ecee.jpg)
 
 ## アプリケーション概要
 音楽スタジオの予約アプリケーション。管理者（admin）はスタジオの追加・編集・削除をすることができ、ユーザー（user）はスタジオの予約、詳細情報の参照をすることができる。
@@ -22,7 +23,8 @@ https://studio-reservation-tk.herokuapp.com/
 ## 利用方法
 * ***共通事項***
    1. admin、userいずれの機能を利用する際も、当アプリはBasic認証を導入しているため、ログイン後にポップアップが表示された場合は以下の内容を入力することで利用することができる。
-   - 
+   - ユーザー名：admin
+   - パスワード：2222
 * ***管理者（admin）の場合***
    1. [管理者ログインページ](https://studio-reservation-tk.herokuapp.com/admins/sign_in)へ遷移する。
    2. テスト用アカウント：``管理者（admin）アカウント``にてログインする。
@@ -34,6 +36,7 @@ https://studio-reservation-tk.herokuapp.com/
    2. テスト用アカウント：``ユーザー（user）アカウント``にてログインする。
    3. トップページ下部のスタジオ一覧より、「``スタジオ予約はこちら``」を押下してスタジオ予約をすることができる。
    4. トップページ中央のカレンダーにて、予約状況を確認することができる。
+   5. マイページにて、自身が過去に予約した履歴を確認することができる。
 
 ## 目指した課題解決
 【案件背景】
@@ -63,48 +66,64 @@ https://studio-reservation-tk.herokuapp.com/
         * トップページにて予約状況を確認することができる。
     * 予約詳細表示機能
         * 予約時に入力した内容を確認することができる。
+    * 予約履歴確認（ユーザーマイページ）機能
+        * マイページにて、自身が過去に予約した履歴を確認することができる。
 
 2. ``管理者要件``
-    * 予約一覧表示機能
-        * トップページにて予約状況を確認することができる。
-    * 予約詳細表示機能
-        * トップページにて予約状況を確認することができる。
-        * ユーザー権限と異なり、予約者の電話番号も確認することができる。
+    * 管理者権限機能
+        * 管理者のアカウント登録を行うことができる。
+        * 管理者としてログインすることができる。
+        * ログアウトすることができる。
     * スタジオ追加機能
         * 設備の増設があった際にスタジオを追加することができる。
     * スタジオ編集機能
         * スタジオ名、1時間あたりの価格を修正することができる。
     * スタジオ削除機能
         * スタジオの削除をすることができる。
-    * 管理者権限機能
-        * 管理者としてログインすることができる。
     * ユーザー権限機能
+        * ユーザーのアカウント登録を行うことができる。
         * ユーザーとしてログインすることができる。
+        * ログアウトすることができる。
+    * 予約一覧表示機能
+        * トップページにて予約状況を確認することができる。
+    * 予約詳細表示機能
+        * トップページにて予約状況を確認することができる。
+        * ユーザー権限と異なり、予約者の電話番号も確認することができる。
         
 ## 実装した機能についてのGIFと説明
-1. スタジオ予約機能
-![reserve](https://user-images.githubusercontent.com/72255154/100207021-701d8400-2f4a-11eb-9b29-8fb60fdfaf7b.gif)
-2. 予約一覧表示機能
-![reserve-list](https://user-images.githubusercontent.com/72255154/100207136-92170680-2f4a-11eb-8b31-9b801b2bdb6a.gif)
-3. 予約詳細表示機能
-![reserve-show](https://user-images.githubusercontent.com/72255154/100207186-a824c700-2f4a-11eb-8f2a-2afe7e0c3a88.gif)
+1. 管理者アカウント登録機能
+![admin-regist](https://user-images.githubusercontent.com/72255154/100402089-ba177e80-309e-11eb-9093-38ae7d23616d.gif)
+2. 管理者ログイン機能
+![admin-sign-in](https://user-images.githubusercontent.com/72255154/100402108-c8659a80-309e-11eb-960c-ea6256d97189.gif)
+3. 管理者ログアウト機能
+![admin-sign-out](https://user-images.githubusercontent.com/72255154/100402126-d5828980-309e-11eb-9704-9b0579109ebb.gif)
 4. スタジオ追加機能
-![studio-add](https://user-images.githubusercontent.com/72255154/100207254-bb379700-2f4a-11eb-8462-74f45cbc9d29.gif)
+![studio-add](https://user-images.githubusercontent.com/72255154/100402458-a6204c80-309f-11eb-84b0-4d0c470b3f73.gif)
 5. スタジオ編集機能
-![studio-edit](https://user-images.githubusercontent.com/72255154/100207287-c5f22c00-2f4a-11eb-8461-843ac142331b.gif)
+![studio-edit](https://user-images.githubusercontent.com/72255154/100402478-b20c0e80-309f-11eb-941f-0f6f96ec8d3f.gif)
 6. スタジオ削除機能
-![studio-delete](https://user-images.githubusercontent.com/72255154/100207342-d60a0b80-2f4a-11eb-8911-0251a31a8a08.gif)
-7. 管理者ログイン機能
-![signin-admin](https://user-images.githubusercontent.com/72255154/100210315-351d4f80-2f4e-11eb-9213-aa7fd3306d0f.gif)
+![studio-delete](https://user-images.githubusercontent.com/72255154/100402490-bdf7d080-309f-11eb-8a6e-c1a108b51290.gif)
+7. ユーザーアカウント登録機能
+![user-regist](https://user-images.githubusercontent.com/72255154/100402825-99e8bf00-30a0-11eb-8edd-27c43811e28b.gif)
 8. ユーザーログイン機能
-![signin-user](https://user-images.githubusercontent.com/72255154/100210359-41091180-2f4e-11eb-9db6-64a94562cd0b.gif)
+![user-sign-in](https://user-images.githubusercontent.com/72255154/100402846-a53bea80-30a0-11eb-8f0f-ad3b957940d4.gif)
+9. ユーザーログアウト機能
+![user-sign-out](https://user-images.githubusercontent.com/72255154/100402864-b1c04300-30a0-11eb-90f3-e9172767f9c2.gif)
+10. 予約機能
+![reserve](https://user-images.githubusercontent.com/72255154/100404435-b71f8c80-30a4-11eb-9286-3b2c90195662.gif)
+11. 予約一覧表示機能
+![reserve-list](https://user-images.githubusercontent.com/72255154/100404455-c3a3e500-30a4-11eb-9786-c3da6bc8ab55.gif)
+12. 予約詳細表示機能
+![reserve-show](https://user-images.githubusercontent.com/72255154/100404474-cef71080-30a4-11eb-9ec8-3efc8f52b2cb.gif)
+13. 予約履歴確認機能
+![reserve-log](https://user-images.githubusercontent.com/72255154/100404500-de765980-30a4-11eb-8e10-235cc4c6978c.gif)
+
 
 ## 実装予定の機能
 * ユーザーによる予約編集機能
 * ユーザーによる予約のキャンセル機能
 * ユーザーのマイページ機能
     * 該当ユーザーに紐づくアカウント情報の編集機能
-    * 該当ユーザーに紐づく過去の予約情報の表示機能
 * 予約一覧表示のスタジオ毎の表示機能
 * レスポンシブデザインへの対応
 
