@@ -17,7 +17,7 @@
         <%= image_tag 'studio-a.jpg' , class:"reserve-box-img" %>
       <% elsif @reservation.reserve.studio_id == 2 %>
         <%= image_tag 'studio-b.jpg' , class:"reserve-box-img" %>
-      <% else @reservation.reserve.studio_id == 3 %>
+      <% elsif @reservation.reserve.studio_id == 3 %>
         <%= image_tag 'studio-c.jpg' , class:"reserve-box-img" %>
       <% end %>
     </div>
