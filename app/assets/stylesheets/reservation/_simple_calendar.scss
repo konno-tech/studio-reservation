@@ -24,4 +24,10 @@
   .current-month {}
 
   .has-events {}
+
+  @media (max-width: 599px) {
+    width: 100%;
+    font-family: 'TsukuARdGothic-Regular';
+    font-size: 8px;
+  }
 }

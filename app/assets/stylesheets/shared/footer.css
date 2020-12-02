@@ -14,3 +14,26 @@
 .footer-text {
   height: 10vh;
 }
+
+/* スマホ向け設定 */
+@media (max-width: 599px) {
+  .page-footer {
+    height: 6vh;
+    background-color: rgba(245,245,245,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-text-wrap {
+  }
+
+  p {
+    font-size: 4px;
+  }
+  
+  .footer-text {
+    /* font-size: 1px; */
+  }
+}
+/* /スマホ向け設定 */

@@ -9,12 +9,6 @@
   background-color: rgba(245,245,245,0.7);
 }
 
-.back-image {
-  width: 100vw;
-  height: 10vh;
-  object-fit: cover;
-}
-
 .left-header {
   position: absolute;
   top: 0%;
@@ -41,7 +35,6 @@
   height: 100%;
   display: flex;
   list-style: none;
-  padding-top: 1vh;
   font-family: 'TsukuARdGothic-Regular';
   color: #333333;
   align-items: center; 
@@ -120,3 +113,122 @@
 .bar {
   border: 1px solid #d3d3d3;
 }
+
+/* スマホ向け設定 */
+@media (max-width: 599px) {
+
+  .top-page-header {
+    width: 100%;
+    height: 6vh;
+    position: relative;
+    background-color: rgba(245,245,245,0.7);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .left-header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 40%;
+  }
+  
+  .studio-icon {
+    font-size: 18px;
+    color: #c0c0c0;
+    font-family: 'Zapfino';
+  }
+
+  .right-header {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0.5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0;
+  }
+  
+  .lists-right {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    font-family: 'TsukuARdGothic-Regular';
+    color: #333333;
+    align-items: center;
+  }
+  
+  .new-studio {
+    text-decoration: none;
+    margin-right: 1.5vw;
+    color: #333333;
+    font-size: 2px;
+    font-weight: bold;
+    padding: 1vh 1vw;
+    border: 1px solid black;
+    border-top: transparent;
+    border-bottom: transparent;
+  }
+  
+  .admin-last-name {
+    text-decoration: none;
+    margin-right: 1.5vw;
+    color: #333333;
+    font-size: 2px;
+    font-weight: bold;
+    padding: 1vh 1.5vw;
+    border: 1px solid black;
+    border-top: transparent;
+    border-bottom: transparent;
+  }
+  
+  .user-last-name {
+    text-decoration: none;
+    margin-right: 1.5vw;
+    color: #333333;
+    font-size: 2px;
+    font-weight: bold;
+    padding: 1vh 1.5vw;
+    border: 1px solid black;
+    border-top: transparent;
+    border-bottom: transparent;
+  }
+  
+  .logout {
+    text-decoration: none;
+    color: #333333;
+    font-size: 2px;
+    font-weight: bold;
+    padding: 1vh 1.5vw;
+    border: 1px solid black;
+    border-top: transparent;
+    border-bottom: transparent;
+  }
+  
+  .login {
+    text-decoration: none;
+    margin-right: 2%;
+    color: #333333;
+    font-size: 2px;
+    font-weight: bold;
+    padding: 1vh 1.5vw;
+    border: 1px solid black;
+    border-top: transparent;
+    border-bottom: transparent;
+  }
+  
+  .sign-up {
+    text-decoration: none;
+    color: #333333;
+    font-size: 2px;
+    font-weight: bold;
+    padding: 1vh 1.5vw;
+    border: 1px solid black;
+    border-top: transparent;
+    border-bottom: transparent;
+  }
+}
+/* /スマホ向け設定 */

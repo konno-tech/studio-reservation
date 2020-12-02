@@ -30,12 +30,7 @@
   <%# /ヘッダー %>
 
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
 
   <%# 予約一覧の表示 %>
   <p class='calendar-content'>今月の予約状況</p>
@@ -88,23 +83,23 @@
         <ul>
           <% if admin_signed_in? %>
             <% @studios.each do |studio| %>
-              <li>
+              <li class='index-text'>
                 <%= link_to '編集', edit_studio_path(studio.id), class: "detail" %>
                 <%= link_to '削除', studio_path(studio.id), method: :delete, class: "detail", data: { confirm: '削除しますか？' } %>
               </li>
             <% end %>
           <% else %>
             <% @studios.each do |studio| %>
-              <li>
-                <%= link_to 'スタジオ予約はこちら', new_studio_reserf_path(studio.id), class: "detail-user" %>
+              <li class='index-text'>
+                <%= link_to '予約はこちら', new_studio_reserf_path(studio.id), class: "detail-user" %>
               </li>
             <% end %>
-            <div class='index-text'>その他ご要望などありましたらスタッフまでお声がけください。</div>
           <% end %>
         </ul>
       </li>
     </ul>
     <div class='index-text'>※表示価格は税抜き価格です。</div>
+    <div class='index-text'>※その他ご要望などありましたらスタッフまでお声がけください。</div>
   </div>
   <%# /スタジオ一覧 %>
   <div class='studio-img-content'>
