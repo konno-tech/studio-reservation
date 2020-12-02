@@ -62,3 +62,73 @@
   font-size: 20px;
   font-family: 'TsukuARdGothic-Regular';
 }
+
+/* スマホ向け設定 */
+@media (max-width: 599px) {
+
+  .reserve-show {
+    background-color: rgba(245,245,245,0.7);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+  }
+  
+  .reserve-box {
+    background-color: #FFF;
+    width: 90%;
+    min-width: 300px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reserve-box>.name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'TsukuARdGothic-Regular';
+    font-weight: bold;
+  }
+  
+  .reserve-box-img {
+    height: 20%;
+    width: 90%;
+    min-height: 0px;
+    object-fit: contain;
+  }
+  
+  .reserve-explain-box {
+    font-size: 5vw;
+    margin: 15px 0px;
+    font-family: 'TsukuARdGothic-Regular';
+    font-weight: bold;
+  }
+  
+  .detail-table {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .detail-reservation {
+    width: 25%;
+    background-color:rgba(245,245,245,0.7);
+    border: 1px solid #dedede;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'TsukuARdGothic-Regular';
+  }
+  
+  .detail-value {
+    width: 75%;
+    padding: 20px;
+    border: 1px solid #dedede;
+    font-size: 15px;
+    font-family: 'TsukuARdGothic-Regular';
+  }
+
+}
+/* /スマホ向け設定 */
