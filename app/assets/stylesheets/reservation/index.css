@@ -23,12 +23,12 @@
 
 .header-area div.text-1 {
   position: absolute;
-  font-size: 250%;
+  font-size: 45px;
   font-weight: bold;
   top: 10%;
   left: 15%;
   color: #c0c0c0;
-  font-family: 'Zapfino';
+  font-family: 'Bad Script', cursive;
 }
 
 .header-area div.text-2 {
@@ -323,12 +323,12 @@ li.studio-list-table > ul > li {
   
   .header-area div.text-1 {
     position: absolute;
-    font-size: 40%;
+    font-size: 22px;
     font-weight: bold;
     top: 10%;
     left: 15%;
     color: #c0c0c0;
-    font-family: 'Zapfino';
+    font-family: 'Bad Script', cursive;
   }
   
   .header-area div.text-2 {

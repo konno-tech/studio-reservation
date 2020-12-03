@@ -17,9 +17,9 @@
 }
 
 .studio-icon {
-  font-size: 2vw;
+  font-size: 45px;
   color: #c0c0c0;
-  font-family: 'Zapfino';
+  font-family: 'Bad Script', cursive;
 }
 
 .right-header {
@@ -135,9 +135,9 @@
   }
   
   .studio-icon {
-    font-size: 18px;
+    font-size: 22px;
     color: #c0c0c0;
-    font-family: 'Zapfino';
+    font-family: 'Bad Script', cursive;
   }
 
   .right-header {
