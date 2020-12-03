@@ -323,7 +323,7 @@ li.studio-list-table > ul > li {
   
   .header-area div.text-1 {
     position: absolute;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
     top: 10%;
     left: 15%;
@@ -334,7 +334,7 @@ li.studio-list-table > ul > li {
   .header-area div.text-2 {
     position: absolute;
     vertical-align: middle;
-    font-size: 25%;
+    font-size: 35%;
     font-weight: bold;
     top: 70%;
     left: 15%;
@@ -558,7 +558,7 @@ li.studio-list-table > ul > li {
   }
   
   .studio-list-table-header {
-    font-size: 5px;
+    font-size: 12px;
     color: #333333;
     font-weight: bold;
     margin-bottom: 10px;
@@ -574,7 +574,7 @@ li.studio-list-table > ul > li {
   .detail {
     text-decoration: none;
     color: #333333;
-    font-size: 5px;
+    font-size: 12px;
     margin-bottom: 2%;
     padding-right: 2%;
     font-family: 'TsukuARdGothic-Regular';
@@ -583,7 +583,7 @@ li.studio-list-table > ul > li {
   
   .detail-user {
     text-decoration: none;
-    font-size: 5px;
+    font-size: 12px;
     color:#cd853f;
     font-family: 'TsukuARdGothic-Regular';
     font-weight: bold;
@@ -592,7 +592,7 @@ li.studio-list-table > ul > li {
   .index-text {
     font-family: 'TsukuARdGothic-Regular';
     font-weight: bold;
-    font-size: 5px;
+    font-size: 10px;
   }
 }
 /* /スマホ向け設定 */
