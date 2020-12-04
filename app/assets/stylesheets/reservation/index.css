@@ -334,36 +334,36 @@ li.studio-list-table > ul > li {
   .header-area div.text-2 {
     position: absolute;
     vertical-align: middle;
-    font-size: 35%;
+    font-size: 13px;
     font-weight: bold;
     top: 70%;
     left: 15%;
     color: #c0c0c0;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     background-color: rgba(245,245,245,0.2);
   }
   
   .header-area div.text-3 {
     position: absolute;
     vertical-align: middle;
-    font-size: 35%;
+    font-size: 13px;
     font-weight: bold;
     top: 77%;
     left: 15%;
     color: #c0c0c0;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     background-color: rgba(245,245,245,0.2);
   }
   
   .header-area div.text-4 {
     position: absolute;
     vertical-align: middle;
-    font-size: 35%;
+    font-size: 13px;
     font-weight: bold;
     top: 84%;
     left: 15%;
     color: #c0c0c0;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     background-color: rgba(245,245,245,0.2);
   }
   
@@ -381,7 +381,7 @@ li.studio-list-table > ul > li {
     justify-content: right;
     list-style: none;
     padding-top: 1vh;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     color: #333333;
   }
   
@@ -389,7 +389,7 @@ li.studio-list-table > ul > li {
     text-decoration: none;
     margin-right: 1.5vw;
     color: #333333;
-    font-size: 7px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -401,7 +401,7 @@ li.studio-list-table > ul > li {
     text-decoration: none;
     margin-right: 1.5vw;
     color: #333333;
-    font-size: 7px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -413,7 +413,7 @@ li.studio-list-table > ul > li {
     text-decoration: none;
     margin-right: 1.5vw;
     color: #333333;
-    font-size: 7px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -424,7 +424,7 @@ li.studio-list-table > ul > li {
   .logout2 {
     text-decoration: none;
     color: #333333;
-    font-size: 7px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -436,7 +436,7 @@ li.studio-list-table > ul > li {
     text-decoration: none;
     margin-right: 1vw;
     color: #333333;
-    font-size: 7px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -447,7 +447,7 @@ li.studio-list-table > ul > li {
   .sign-up2 {
     text-decoration: none;
     color: #333333;
-    font-size: 7px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -482,7 +482,7 @@ li.studio-list-table > ul > li {
     top: 68%;
     left: 2%;
     color: #c0c0c0;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .studio-img-content div.text-6 {
@@ -492,7 +492,7 @@ li.studio-list-table > ul > li {
     top: 68%;
     left: 35%;
     color: #c0c0c0;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .studio-img-content div.text-7 {
@@ -502,13 +502,13 @@ li.studio-list-table > ul > li {
     top: 68%;
     left: 67%;
     color: #c0c0c0;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .calendar-content {
     color: #3f3f3f;
     font-size: 4vw;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     display: flex;
     justify-content: center;
   }
@@ -528,7 +528,7 @@ li.studio-list-table > ul > li {
   }
   
   .studio-list-header {
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-size: 4vw;
     color: #333333;
     margin-bottom: 10px;
@@ -545,7 +545,7 @@ li.studio-list-table > ul > li {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   ul.studio-info > li {
@@ -563,7 +563,7 @@ li.studio-list-table > ul > li {
     font-weight: bold;
     margin-bottom: 10px;
     border-bottom: 2px solid #333333;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   li.studio-list-table > ul > li {
@@ -577,7 +577,7 @@ li.studio-list-table > ul > li {
     font-size: 12px;
     margin-bottom: 2%;
     padding-right: 2%;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: bold;
   }
   
@@ -585,12 +585,12 @@ li.studio-list-table > ul > li {
     text-decoration: none;
     font-size: 12px;
     color:#cd853f;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: bold;
   }
   
   .index-text {
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: bold;
     font-size: 10px;
   }
