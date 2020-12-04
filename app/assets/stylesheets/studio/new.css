@@ -37,17 +37,17 @@
 
   .studios-name {
     font-size: 17px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
 
   .sell-yen {
     font-size: 17px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .price-input {
     font-size: 17px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .sell-btn-contents {
@@ -64,7 +64,7 @@
     line-height: 48px;
     font-size: 17px;
     font-weight: bold;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     cursor: pointer;
     margin-bottom: 30px;
   }
