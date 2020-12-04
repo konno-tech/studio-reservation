@@ -160,12 +160,15 @@
     color: #333333;
     align-items: center;
   }
+
+  .list-right li {
+    margin-right: 1.5vw;
+  }
   
   .new-studio {
     text-decoration: none;
-    margin-right: 1.5vw;
     color: #333333;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1vw;
     border: 1px solid black;
@@ -175,9 +178,8 @@
   
   .admin-last-name {
     text-decoration: none;
-    margin-right: 1.5vw;
     color: #333333;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -187,9 +189,8 @@
   
   .user-last-name {
     text-decoration: none;
-    margin-right: 1.5vw;
     color: #333333;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -200,7 +201,7 @@
   .logout {
     text-decoration: none;
     color: #333333;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -210,9 +211,8 @@
   
   .login {
     text-decoration: none;
-    margin-right: 2%;
     color: #333333;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
@@ -223,7 +223,7 @@
   .sign-up {
     text-decoration: none;
     color: #333333;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1vh 1.5vw;
     border: 1px solid black;
