@@ -90,7 +90,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: bold;
   }
   
@@ -104,7 +104,7 @@
   .reserve-explain-box {
     font-size: 5vw;
     margin: 15px 0px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: bold;
   }
   
@@ -119,7 +119,7 @@
     border: 1px solid #dedede;
     font-size: 14px;
     text-align: center;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .detail-value {
@@ -127,7 +127,7 @@
     padding: 20px;
     border: 1px solid #dedede;
     font-size: 15px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
 
 }
