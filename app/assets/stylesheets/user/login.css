@@ -110,7 +110,7 @@
     line-height: 50px;
     border-bottom: 1px solid #d3d3d3;
     font-weight: bold;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .form-group {
@@ -129,7 +129,7 @@
   .form-text {
     font-size: 17px;
     font-weight: bold;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .input-default {
@@ -159,7 +159,7 @@
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
 
 }

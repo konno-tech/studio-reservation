@@ -227,19 +227,19 @@
   
   .form-info-header {
     font-weight: bold;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-size: 17px;
   }
   
   .form-info-text {
     font-size: 15px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .info-text {
     color: #888;
     font-size: 15px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     margin-top: 3px;
   }
   
@@ -261,7 +261,7 @@
     background: #fff;
     font-size: 17px;
     resize: none;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .input-birth-wrap {
@@ -314,7 +314,7 @@
     color: #333333;
     line-height: 48px;
     font-size: 17px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     cursor: pointer;
   }
   

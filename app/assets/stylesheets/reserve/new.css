@@ -145,7 +145,7 @@
   .form-header-text-2 {
     line-height: 50px;
     border-bottom: 1px solid #d3d3d3;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: bold;
   }
   
@@ -165,7 +165,7 @@
   .form-text-2 {
     font-size: 17px;
     font-weight: bold;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .indispensable {
@@ -176,18 +176,18 @@
     color: #fff;
     font-size: 15px;
     font-weight: bold;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: bold;
   }
   
   .indispensable-text {
     font-size: 17px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .reserve-content {
     font-size: 17px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
 
   .card-logo {
@@ -202,12 +202,12 @@
     margin-bottom: 10%;
     padding-bottom: 3%;
     border-bottom: 1px solid #d3d3d3;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .input-default {
     font-size: 17px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
 
   .input-expiration-date-wrap p {
@@ -217,7 +217,7 @@
   .input-expiration-date {
     font-size: 17px;
     width: 100%;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .reserve-btn-contents {
@@ -236,7 +236,7 @@
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 20px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .back-btn {
@@ -249,7 +249,7 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
   }
 }
 /* /スマホ向け設定 */
