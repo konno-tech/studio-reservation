@@ -29,6 +29,7 @@
 
   .reserve-show {
     width: 100%;
+    height: 90%;
     background-color: rgba(245,245,245,0.7);
   }
 
@@ -41,7 +42,7 @@
 
   .name {
     font-size: 20px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: bold;
   }
 
@@ -49,10 +50,10 @@
     width: 10%;
     background-color:rgba(245,245,245,0.7);
     border: 1px solid #dedede;
-    font-size: 5px;
+    font-size: 12px;
     padding-top: 3px;
     padding-bottom: 3px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-family: 'Kosugi Maru', sans-serif;
     text-align: center;
   }
   
@@ -62,8 +63,8 @@
     padding-top: 3px;
     padding-bottom: 3px;
     border: 1px solid #dedede;
-    font-size: 5px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-size: 12px;
+    font-family: 'Kosugi Maru', sans-serif;
   }
   
   .detail-reservation-list {
@@ -72,8 +73,8 @@
     padding-top: 3px;
     padding-bottom: 3px;
     border: 1px solid #dedede;
-    font-size: 5px;
-    font-family: 'TsukuARdGothic-Regular';
+    font-size: 12px;
+    font-family: 'Kosugi Maru', sans-serif;
   }
 
 }
